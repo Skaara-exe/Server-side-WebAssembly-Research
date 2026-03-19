@@ -1,0 +1,246 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+# Debug files
+*.dSYM/
+*.dSYM.zip
+*.dSYM.tar.gz
+# Coverage files
+tarpaulin-report.html
+cobertura.xml
+lcov.info
+*.gcda
+*.gcno
+# IDE files
+**/.idea/
+**/.vscode/
+**/*.code-workspace
+# Documentation
+/target/doc/
+# Backup files
+**/*.bak
+**/*.orig
+**/*.rej
+# Rustfmt
+rustfmt.toml.bak
+# Clippy
+clippy.toml.bak
+# Cargo registry
+.cargo/
+# Rust-analyzer
+rust-project.json
+
+# Go
+vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+go.work.sum
+# Test coverage
+*.out
+coverage.txt
+coverage.html
+coverage.xml
+*.coverprofile
+*.cover
+# Dependency management
+go.sum.bak
+# IDE files
+**/.idea/
+**/.vscode/
+**/*.code-workspace
+# Go workspace
+go.work.sum
+# Build cache
+.cache/
+# Debug files
+debug
+__debug_bin
+# Air live reload
+tmp/
+# Delve debugger
+__debug_bin
+# GoLand
+.idea/
+# VS Code
+.vscode/
+# Backup files
+**/*.bak
+**/*.orig
+**/*.rej
+# Profiling
+*.prof
+*.pprof
+# Go modules cache (optional - usually in GOPATH/pkg/mod)
+# pkg/mod/
+
+# C#
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.csproj.user
+*.csproj.vspscc
+*.vssscc
+build/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.tmp
+.vs/
+# NuGet packages
+packages/
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+# Test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+# Coverage reports
+coverage/
+*.coverage
+*.coveragexml
+# Visual Studio cache/options
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+# Rider
+.idea/
+*.sln.iml
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+# MSTest test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+# StyleCop
+StyleCopReport.xml
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+# Backup files
+**/*.bak
+**/*.orig
+**/*.rej
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# C++ / WASI SDK (extract per README, do not commit)
+wasi-sdk-*/
+**/wasi-sdk-*/
+
+# WASI HTTP Examples
+*.wasm
+*.wat
+wasmtime/
+wasi-http/
+build/
+dist/
+*.o
+*.a
+# WASI toolchain
+.wasmtime/
+.wasi/
+# Build artifacts
+*.wasm.map
+*.wasm.dwarf
+# Test outputs
+test-results/
+*.test.wasm
+# Coverage (if using wasm-specific tools)
+coverage/
+*.lcov
+# Documentation builds
+docs/_build/
+site/
+# Wizer (WASM pre-initializer)
+*.wizer.wasm
+# wasm-pack
+pkg/
+target/
+# wasm-bindgen
+wasm-bindgen/
+# Debug symbols
+*.wasm.dbg
+*.wasm.debug
+# WAT files (text format)
+*.wat.bak
+# WASI preview snapshots
+wasi-snapshot-preview1/
+wasi-snapshot-preview2/
+# Cargo-wasi
+.cargo-wasi/
+
+# General
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.log
+
+/Test_AI_WASI/model.onnx

@@ -1,0 +1,17 @@
+package api:library;
+
+world hello {
+    // Minimal imports needed for HTTP incoming handler
+    // Only import what's absolutely necessary to avoid pulling in wasi:cli/environment
+    import wasi:io/poll@0.2.6;
+    import wasi:clocks/monotonic-clock@0.2.6;
+    import wasi:clocks/wall-clock@0.2.6;
+    import wasi:random/random@0.2.6;
+    import wasi:io/error@0.2.6;
+    import wasi:io/streams@0.2.6;
+    import wasi:http/types@0.2.6;
+    // Removed outgoing-handler - we only handle incoming requests
+    
+    // Export what wasmtime serve calls
+    export wasi:http/incoming-handler@0.2.6;
+}

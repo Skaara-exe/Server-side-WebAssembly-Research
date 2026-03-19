@@ -1,0 +1,18 @@
+spin_manifest_version = 2
+
+[application]
+name = "edge-ml-embedding"
+version = "0.1.0"
+authors = ["TheLab"]
+description = "SAM ViT-B image encoder running at the edge via Fermyon Spin / WASI — image fingerprinting demo"
+
+[[trigger.http]]
+route = "/embed"
+component = "embedder"
+
+[component.embedder]
+source = "target/wasm32-wasip1/release/embedder.wasm"
+
+[component.embedder.build]
+command = "cargo build --target wasm32-wasip1 --release"
+watch = ["src/**/*.rs", "Cargo.toml"]

@@ -1,0 +1,1 @@
+rootProject.name = "adder-graalwasm-module-java"

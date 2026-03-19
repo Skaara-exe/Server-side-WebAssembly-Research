@@ -1,0 +1,57 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  annotations:
+    version: v0.0.1
+    description: "Hello world"
+  name: hello-world
+spec:
+  components:
+    - name: hello-world
+      type: component
+      properties:
+        image: file:///home/user/http-hello-world/build/hello_world_s.wasm
+      traits:
+        - type: spreadscaler
+          properties:
+            instances: 1
+        - type: link
+          properties:
+            namespace: wasi
+            package: keyvalue
+            interfaces: [store, atomics]
+            target:
+              name: kvnats
+              config:
+                - name: wasi-keyvalue-config
+                  properties:
+                    bucket: default
+                    enable_bucket_auto_create: "true"
+
+    - name: kvnats
+      type: capability
+      properties:
+        image: ghcr.io/wasmcloud/keyvalue-nats:0.3.0
+      traits:
+        - type: spreadscaler
+          properties:
+            instances: 1
+
+    - name: httpserver
+      type: capability
+      properties:
+        image: ghcr.io/wasmcloud/http-server:0.23.2
+      traits:
+        - type: spreadscaler
+          properties:
+            instances: 1
+        - type: link
+          properties:
+            target: hello-world
+            namespace: wasi
+            package: http
+            interfaces: [incoming-handler]
+            source_config:
+              - name: default-http
+                properties:
+                  address: 0.0.0.0:8000

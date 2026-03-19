@@ -1,0 +1,1 @@
+C:\Users\Skaara\Documents\school\ 2025-26\LAB\demo\cross-language-demo\java-rust\rust\ guest\target\wasm32-wasip1\release\fibonacci.wasm: C:\Users\Skaara\Documents\school\ 2025-26\LAB\demo\cross-language-demo\java-rust\rust\ guest\src\lib.rs

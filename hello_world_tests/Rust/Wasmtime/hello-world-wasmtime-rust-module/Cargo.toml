@@ -1,0 +1,8 @@
+[package]
+name = "hello-world-wasmtime-rust-module-host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasmtime = "41.0.3"
+wasmtime-wasi = "41.0.3"

@@ -1,0 +1,12 @@
+[package]
+name    = "fibonacci"
+version = "0.1.0"
+edition = "2021"
+
+# ── library (WASM module) ─────────────────────────────────────────────────────
+[lib]
+crate-type = ["cdylib"]   # produces fibonacci.wasm
+
+[profile.release]
+opt-level = "z"   # minimise .wasm size
+lto       = true    

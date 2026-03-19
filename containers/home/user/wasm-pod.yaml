@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: wasm-app
+spec:
+  runtimeClassName: wasmtime
+  tolerations:
+    - key: "node-role.kubernetes.io/control-plane"
+      operator: "Exists"
+      effect: "NoSchedule"
+  containers:
+    - name: app
+      image: stroempell/my-wasm-app:latest

@@ -1,0 +1,5 @@
+C:\Users\Skaara\Documents\school 2025-26\LAB\hello_world_tests\Wasmtime\hello-world-wasmtime-rust-module\module\target\wasm32-wasip1\release\deps\hello_world_wasmtime_rust_module.d: src\lib.rs
+
+C:\Users\Skaara\Documents\school 2025-26\LAB\hello_world_tests\Wasmtime\hello-world-wasmtime-rust-module\module\target\wasm32-wasip1\release\deps\hello_world_wasmtime_rust_module.wasm: src\lib.rs
+
+src\lib.rs:

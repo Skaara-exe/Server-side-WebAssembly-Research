@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Tinkerers — Server-side WebAssembly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/TTS.svg">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">The <span>Tinkerers</span></a>
+    <ul class="nav-links">
+      <li class="nav-dropdown">
+        <a href="#cards" class="nav-dropdown-toggle">Pages ▾</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="pages/article_page.html">📄 Article</a></li>
+          <li><a href="pages/research_paper_page.html">📄 Research Paper</a></li>
+          <li><a href="https://github.com/Skaara-exe/Server-side-WebAssembly-Research/tree/main/demo" target="_blank">🦊 Demo Source Code</a></li>
+          <li><a href="https://github.com/Skaara-exe/Server-side-WebAssembly-Research" target="_blank">🦊 Repo</a></li>
+          <li><a href="pages/presentation_slides_page.html">📊 Slides</a></li>
+          <li><a href="pages/teaching_slides.html">📊 Teacher Slides</a></li>
+          <li><a href="pages/pitch_page.html">🎬 Pitch</a></li>
+          <li><a href="pages/team_page.html">👥 Team</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO / TEAM PICTURE -->
+  <section class="hero">
+    <a href="pages/team_page.html">
+    <img src="assets/the_team.jpg" class="hero-img" alt="Team photo">
+    </a>
+    <div class="hero-overlay">
+      <div class="hero-tag">KdG The Lab · 2025–26</div>
+      <h1 class="hero-title">The Tinkerers<br><span>Server-side WebAssembly</span></h1>
+      <p class="hero-sub">Thursday 26 March · Room 207 · 19:30–20:00</p>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section class="cards-section" id="cards">
+    <p class="cards-label">Quick Links</p>
+    <div class="cards-grid">
+
+      <a class="card pdf" href="pages/article_page.html">
+        <div class="card-icon">📄</div>
+        <div class="card-type">Page</div>
+        <div class="card-title">Article</div>
+        <div class="card-desc">Our write-up on Server-side WebAssembly.</div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a class="card pdf" href="pages/research_paper_page.html">
+        <div class="card-icon">📄</div>
+        <div class="card-type">Page</div>
+        <div class="card-title">Research paper</div>
+        <div class="card-desc">An in-depth research paper on Server-side WebAssembly.</div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a class="card repo" href="https://github.com/Skaara-exe/Server-side-WebAssembly-Research/tree/main/demo" target="_blank">
+        <div class="card-icon">🦊</div>
+        <div class="card-type">Github Repo</div>
+        <div class="card-title">Demo source code</div>
+        <div class="card-desc">cross language,<br>http ai faas,<br>wasmcloud presistence</div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a class="card repo" href="https://github.com/Skaara-exe/Server-side-WebAssembly-Research" target="_blank">
+        <div class="card-icon">🦊</div>
+        <div class="card-type">Github Repo</div>
+        <div class="card-title">Repo</div>
+        <div class="card-desc">Collection of all the written/practice code behind our research.</div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a class="card pdf" href="pages/presentation_slides_page.html">
+        <div class="card-icon">📊</div>
+        <div class="card-type">Page</div>
+        <div class="card-title">Presentation slides</div>
+        <div class="card-desc">Conference presentation slides (PDF).</div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a class="card pdf" href="pages/teaching_slides.html">
+        <div class="card-icon">📊</div>
+        <div class="card-type">Page</div>
+        <div class="card-title">Teachers slides</div>
+        <div class="card-desc">lesson slides made for a teaching session</div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a class="card" href="pages/pitch_page.html">
+        <div class="card-icon">🎬</div>
+        <div class="card-type">Page</div>
+        <div class="card-title">Pitch</div>
+        <div class="card-desc">Introduction, pitch video.</div>
+        <span class="card-arrow">→</span>
+      </a>
+
+      <a class="card" href="pages/team_page.html">
+        <div class="card-icon">👥</div>
+        <div class="card-type">Page</div>
+        <div class="card-title">Team</div>
+        <div class="card-desc">Meet the members of The Tinkerers.</div>
+        <span class="card-arrow">↓</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- TEAM MEMBERS -->
+  <section class="team-section" id="team">
+    <h2>The Team</h2>
+    <div class="team-grid">
+
+      <a class="member" href="https://www.linkedin.com/in/storm-van-loon/" target="_blank">
+        <div class="member-avatar">SL</div>
+        <div>
+          <div class="member-name">Storm van Loon</div>
+          <div class="member-li">linkedin →</div>
+        </div>
+      </a>
+
+      <a class="member" href="https://www.linkedin.com/in/skaara-poncin-34719b302/" target="_blank">
+        <div class="member-avatar">SP</div>
+        <div>
+          <div class="member-name">Skaara Poncin</div>
+          <div class="member-li">linkedin →</div>
+        </div>
+      </a>
+
+      <a class="member" href="https://www.linkedin.com/in/gabriel-uwaila-183780242/" target="_blank">
+        <div class="member-avatar">GU</div>
+        <div>
+          <div class="member-name">Gabriel Uwaila</div>
+          <div class="member-li">linkedin →</div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</body>
+</html>
